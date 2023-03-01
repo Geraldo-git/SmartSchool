@@ -5,21 +5,25 @@ using System.Threading.Tasks;
 
 namespace SmartSchool.API.Models
 {
-    public Professor()
-    {
-        
-    }
-    
     public class Professor
     {
-        public Professor(int id, string nome) 
+
+        public Professor()
         {
-            this.Id = id;
-            this.Nome = nome;
-   
+
         }
+
+        public Professor(int id, string nome)
+        {
+            Id = id;
+            Nome = nome;
+        }
+
         public int Id { get; set; }
         public string Nome { get; set; }
-        public IEnumerable<Disciplina> Disciplinas{ get; set; }
+
+        public IEnumerable<Disciplina> Disciplinas { get; set; }
+
+
     }
 }
